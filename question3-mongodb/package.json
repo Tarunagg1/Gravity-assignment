@@ -1,0 +1,13 @@
+{
+    "name": "mongodb-sales-aggregation",
+    "version": "1.0.0",
+    "description": "MongoDB aggregation pipeline for sales revenue analysis",
+    "main": "salesAggregation.js",
+    "scripts": {
+        "start": "node salesAggregation.js",
+        "test": "node testData.js"
+    },
+    "dependencies": {
+        "mongodb": "^6.0.0"
+    }
+}
