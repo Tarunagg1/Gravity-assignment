@@ -10,7 +10,6 @@ const salesAggregationPipeline = [
         $addFields: {
             // Calculate revenue for each item (quantity * price)
             itemRevenue: { $multiply: ["$items.quantity", "$items.price"] },
-
             // Extract year-month from the date field
             month: {
                 $dateToString: {
